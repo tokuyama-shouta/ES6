@@ -28,3 +28,19 @@ posts.forEach(function(post){
 images.forEach(function(image){
   areas.push(image.height*image.width);
 })
+
+//map
+
+let numbers = [1,2,3];
+let doubledNumbers = [];
+
+for (let i = 0; i < numbers.length; i++){
+  doubledNumbers.push(numbers[i]*2);
+}
+
+let doubled = numbers.map(function(number) {
+  return number * 2;
+})
+
+doubled;
+doubledNumbers;
