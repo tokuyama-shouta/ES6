@@ -44,3 +44,20 @@ let doubled = numbers.map(function(number) {
 
 doubled;
 doubledNumbers;
+
+let cars = [
+  {type: '軽自動車',price: '安い'},
+  {type: '高級車',price: '高い'}
+];
+let prices = cars.map(function(car){
+  return car.price;
+});
+prices;
+
+let height = images.map(function(image){
+  return image.height;
+})
+
+let speeds = trips.map(function(trip){
+  return trip.distance/trip.time;
+})
