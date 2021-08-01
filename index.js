@@ -61,3 +61,36 @@ let height = images.map(function(image){
 let speeds = trips.map(function(trip){
   return trip.distance/trip.time;
 })
+
+let products = [
+  { name: 'きゅうり', type: '野菜' },
+  { name: 'バナナ', type: 'フルーツ' },
+  { name: 'セロリ', type: '野菜' },
+  { name: 'オレンジ', type: 'フルーツ' },
+];
+
+let filteredProducts = [];
+
+for(let i = 0; i < products.length; i++){
+  if(products[i].type === 'フルーツ'){
+    filteredProducts.push(products[i]);
+  }
+}
+
+
+products.filter(function(product){
+  return product.type === 'フルーツ';
+});
+
+let products = [
+  { name: 'きゅうり', type: '野菜', quabtity: 0, price: 1},
+  { name: 'バナナ', type: 'フルーツ',quabtity: 0, price: 1},
+  { name: 'セロリ', type: '野菜', quabtity: 0, price: 1},
+  { name: 'オレンジ', type: 'フルーツ', quabtity: 0, price: 1},
+];
+
+products.filter(function(product){
+  return product.type === '野菜' && product.quantity > 0 && product.price < 10;
+})
+
+
