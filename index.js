@@ -93,4 +93,24 @@ products.filter(function(product){
   return product.type === '野菜' && product.quantity > 0 && product.price < 10;
 })
 
+let users = [
+  { name: '太郎'},
+  { name: '次郎'},
+  { name: '三郎'},
+];
+
+let user;
+for(let i = 0; i < users.length; i++) {
+  if(users[i].name === '次郎'){
+    user = user[i];
+    break;
+  }
+}
+
+users.find(function(user) {
+  return user.name === '次郎';
+});
+
+user;
+
 
