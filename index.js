@@ -113,4 +113,32 @@ users.find(function(user) {
 
 user;
 
+function Car(model){
+  this.model = model;
+}
+
+let cars = [
+  new Car('プリウス'),
+  new Car('ノート'),
+  new Car('アクア'),
+];
+
+cars.find(function(car){
+  return car.model == 'アクア';
+});
+
+let posts = [
+  { id: 1, title: '古い投稿'},
+  { id: 2, title: '新しい投稿'},
+]
+
+let comment = { postId: 2, content: '良いね!'}
+
+function postForComment(posts, comment) {
+  return posts.find(function(post){
+    return post.id === comment.postId;
+  });
+}
+postForComment(post, comment);
+
 
