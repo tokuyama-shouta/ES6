@@ -141,4 +141,50 @@ function postForComment(posts, comment) {
 }
 postForComment(post, comment);
 
+let computers = [
+  { name: 'Apple', ram: 24 },
+  { name: 'Campaq', ram: 4 },
+  { name: 'Acer', ram: 32 },
+];
+
+
+let allComputersCanRun = true;
+let someComputersCanRun = false;
+
+for (let i = 0; i < computers.length; i++){
+  let computer = computers[i];
+
+  if(computer.ram < 16) {
+    allComputersCanRun = false;
+  }else{
+    someComputersCanRun = true;
+  }
+}
+
+allComputersCanRun
+someComputersCanRun
+
+computers.every(function(computer) {
+  return computer.ram >= 16;
+});
+
+conputers.some(function(computer){
+  return computer.ram >= 16;
+})
+
+let names = [
+  'けん',
+  'はなこ',
+  'そういちろう'
+]
+
+names.every(function(name){
+  return name.length >= 3;
+});
+names.some(function(name){
+  return name.length >= 3;
+});
+
+
+
 
