@@ -185,6 +185,27 @@ names.some(function(name){
   return name.length >= 3;
 });
 
+let numbers = [10,20,30];
+let sum = 0;
+
+for (let i = 0; i < numbers.length; i++){
+  sum += numbers[i];
+}
 
 
+
+numbers.reduce(function(sum,number){
+  return sum + number;
+}, 0);
+
+let primaryColor = [
+  { color: 'red'},
+  { color: 'yellow'},
+  { color: 'blue'}
+];
+
+primaryColors.reduce(function(previous,primaryColor){
+  previous.push(primaryColor.color)
+  return previous;
+},[]);
 
