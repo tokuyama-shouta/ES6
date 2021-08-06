@@ -209,3 +209,10 @@ primaryColors.reduce(function(previous,primaryColor){
   return previous;
 },[]);
 
+let color = "red";
+color;
+
+const name = "太郎";
+let title = "app エンジニア";
+
+
