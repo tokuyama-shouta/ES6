@@ -215,4 +215,11 @@ color;
 const name = "太郎";
 let title = "app エンジニア";
 
+function getMessage() {
+  const year = new Date().getFullYear();
+  return `今年は${year}年です。`;
+}
+getMessage();
+
+
 
