@@ -234,5 +234,12 @@ const add = (a, b) => {
 const add = (a,b) => a + b;
 add(1,2);
 
+const double = number => 2 * number;
+doubled(8);
+
+const numbers = [1,2,3];
+
+numbers.map(number => 2 * number);
+
 
 
