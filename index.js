@@ -226,7 +226,13 @@ const guid = 20;
 const username = "pkpk";
 const data = `${device_id}${guid}${username}`;
 
-const yearMessage = `今年は${year}年です。`
+const yearMessage = `今年は${year}年です。`;
+
+const add = (a, b) => {
+  return a + b;
+}
+const add = (a,b) => a + b;
+add(1,2);
 
 
 
