@@ -241,5 +241,15 @@ const numbers = [1,2,3];
 
 numbers.map(number => 2 * number);
 
+const team = {
+  members: ['太郎','花子'],
+  teamName: 'スーパーチーム',
+  teamSummary: function() {
+    return this.members.map(function(member){
+      return `${member}は${this.teamName}の所属です`;
+    });
+  }
+}
+
 
 
