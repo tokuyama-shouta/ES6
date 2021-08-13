@@ -272,4 +272,12 @@ const bookShop = createBookShop(inventory);
 bookShop.inventoryValue();
 bookShop.priceFprTitle('ハリーポッター');
 
+function saveFile() {
+  $.ajax({ method: 'POST', url, data});
+}
+const url = 'http://fileupload.com';
+const data = { color: 'red'};
+
+saveFile(url, data)
+
 
